@@ -1,0 +1,11 @@
+<h2>Studios:<h2><br>
+
+<% @studios.each do |studio| %>
+  <div id="id-<%= studio.id %>">
+    <%= studio.name %><br>
+    <%= studio.location %>
+    <% studio.movies.each do |movie| %>
+      <%= movie.title %>
+    <% end %>
+  </div>
+<% end %>
