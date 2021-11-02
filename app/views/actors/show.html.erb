@@ -1,0 +1,8 @@
+<%= @actor.name %>
+<%= @actor.age %>
+
+<h4>Actors <%= @actor.name %> has worked with:</h4>
+
+<% @coactors.each do |actor| %>
+  <%= actor.name %>
+<% end %>
